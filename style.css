@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+}
+
+
+::-webkit-scrollbar {
+    width: 0;
+    overflow-y: scroll;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    scrollbar-width: 0;
+    background-color: hsl(216, 12%, 8%);
+    font-family: 'Overpass', sans-serif;
+}
+
+img {
+    background-color: hsl(215, 17%, 14%);
+    border-radius: 50%;
+    padding: 15px;
+}
+
+h1 {
+    color: white;
+}
+
+.page1 {
+    margin-bottom: 15px;
+}
+
+p {
+    color: hsl(217, 12%, 63%);
+    font-size: 0.9375rem;
+}
+
+.container {
+    text-align: left;
+    width: 400px;
+    margin: 150px auto 50px;
+    background-color: hsl(213, 19%, 18%);
+    padding: 25px 30px;
+    border-radius: 20px;
+}
+
+.two {
+    text-align: center;
+}
+
+.main-text {
+    line-height: 1.5rem;
+}
+
+.rating {
+    color: hsl(25, 97%, 53%);
+    border-radius: 20px;
+    background-color: hsl(215, 17%, 14%);
+    width: 60%;
+    margin: 10px auto;
+    text-align: center;
+    padding-block: 2%;
+    opacity: 0.8;
+}
+
+.numbers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.rate{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding-block: 15px;
+}
+
+.rate-color:hover {
+    background-color: hsl(216, 12%, 54%);
+    cursor: pointer;
+}
+
+.rate-color {
+    background-color: hsl(215, 17%, 14%);
+    color: hsl(217, 12%, 63%);
+}
+
+.clicked {
+    background-color: hsl(25, 97%, 53%) !important;
+    color: white !important;
+}
+
+.clicked:hover {
+    cursor: pointer;
+}
+
+
+button {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    border-radius: 30px;
+    border: thin;
+    letter-spacing: 5px;
+    background-color:  hsl(25, 97%, 53%);
+    margin: 30px auto 0;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 600;
+    padding-block: 4%;
+} 
+
+button:hover {
+    color: hsl(25, 97%, 53%);
+    background-color: white;
+    cursor: pointer;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution p {
+    color: white;
+}
+
+.attribution a { 
+    color: hsl(25, 97%, 53%);
+}
+
+
+@media only screen and (max-width: 375px) {
+    .container, .two {
+        width: 90%;
+        margin-top: 100px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .main-text {
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+    }
+
+    .attribution p{
+        font-size: 0.8rem;
+    }
+
+    .rating {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .rate {
+        width: 30px;
+        height: 30px;
+        padding-block: 3%;
+    }
+
+    .attribution p{
+        font-size: 0.6rem;
+    }
+
+    
+}
+
